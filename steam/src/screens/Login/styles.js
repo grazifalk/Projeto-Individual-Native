@@ -39,6 +39,8 @@ height: 71px;
 background: #202126;
 border-radius: 10px;
 margin-bottom: 25px;
+padding-left: 20px;
+padding-right: 20px;
 `;
 
 export const InputPassword = styled.TextInput`
@@ -48,6 +50,8 @@ height: 71px;
 background: #202126;
 border-radius: 10px;
 margin-bottom: 25px;
+padding-left: 20px;
+padding-right: 20px;
 `;
 
 export const Recover = styled.Text`
