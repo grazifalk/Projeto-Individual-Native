@@ -1,6 +1,7 @@
 import { StatusBar } from "expo-status-bar";
 import { TouchableOpacity, View } from "react-native";
 import { useState } from "react";
+import { useNavigation } from "@react-navigation/native";
 import {
   Container,
   TextButton,
@@ -17,6 +18,12 @@ export default function Login() {
     login: "",
     password: "",
   });
+
+  const navigation = useNavigation();
+
+  function profile() {
+    navigation.navigate("Profile");
+  }
 
   return (
     <Container>
@@ -38,7 +45,7 @@ export default function Login() {
       />
       </View>
       <StButton>
-        <TextButton>Sign in</TextButton>
+        <TextButton onPress={profile}>Sign in</TextButton>
       </StButton>
       <TouchableOpacity>
         <Recover>Forgot your account name or password?</Recover>
