@@ -2,6 +2,7 @@ import { StatusBar } from "expo-status-bar";
 import { Header } from "../../components/Header";
 import { Category, Container, Country, EditButton, LastView, Level, Name, Service, Status, TextButton, Title, Top, User } from "./styles";
 import { useNavigation } from "@react-navigation/native";
+import { Menu } from "../../components/Menu";
 
 export default function Profile() {
   const navigation = useNavigation();
@@ -28,6 +29,7 @@ export default function Profile() {
         <Category>Groups</Category>
         <Category>Friends</Category>
         <Category>Games</Category>
+        <Menu />
         <StatusBar style="auto" />
       </Container>
   );
