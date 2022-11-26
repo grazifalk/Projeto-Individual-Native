@@ -14,3 +14,8 @@ export const Container = styled.View`
   position: absolute;
   bottom: 0;
 `;
+
+export const UserIcon = styled.Image`
+  width: 57.65px;
+  height: 32.58px;
+`;

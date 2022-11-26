@@ -1,9 +1,9 @@
 import React from "react";
-import {createNativeStackNavigator} from "@react-navigation/native-stack";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import Login from "../screens/Login";
 import Profile from "../screens/Profile";
 
-const {Screen, Navigator} = createNativeStackNavigator();
+const { Screen, Navigator } = createNativeStackNavigator();
 
 export function StackRoutes() {
   return (
@@ -11,6 +11,7 @@ export function StackRoutes() {
       screenOptions={{
         headerShown: false,
       }}
+      initialRouteName="Login"
     >
       <Screen name="Login" component={Login} />
       <Screen name="Profile" component={Profile} />

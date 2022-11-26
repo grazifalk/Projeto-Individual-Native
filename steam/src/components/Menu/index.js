@@ -5,7 +5,7 @@ import {
   MaterialCommunityIcons,
   FontAwesome5,
 } from "@expo/vector-icons";
-import { Container } from "./styles.js";
+import { Container, UserIcon } from "./styles.js";
 import { useNavigation } from "@react-navigation/native";
 
 export const Menu = () => {
@@ -38,7 +38,7 @@ export const Menu = () => {
         />
       </TouchableOpacity>
       <TouchableOpacity>
-        <FontAwesome5 name={"user-friends"} size={30} color={colors.tertiary} />
+        <UserIcon source={require("../../../assets/user-icon.svg")} />
       </TouchableOpacity>
     </Container>
   );

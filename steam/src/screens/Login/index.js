@@ -29,20 +29,20 @@ export default function Login() {
     <Container>
       <Title>SIGN IN</Title>
       <View>
-      <InputText>steam account name</InputText>
-      <InputLogin
-        value={user.login}
-        onChangeText={setUser}
-        placeholderTextColor={"white"}
-      />
+        <InputText>steam account name</InputText>
+        <InputLogin
+          value={user.login}
+          onChangeText={setUser}
+          placeholderTextColor={"white"}
+        />
       </View>
       <View>
-      <InputText>password</InputText>
-      <InputPassword
-        value={user.password}
-        onChangeText={setUser}
-        placeholderTextColor={"white"}
-      />
+        <InputText>password</InputText>
+        <InputPassword
+          value={user.password}
+          onChangeText={setUser}
+          placeholderTextColor={"white"}
+        />
       </View>
       <StButton>
         <TextButton onPress={profile}>Sign in</TextButton>
